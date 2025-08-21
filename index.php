@@ -78,7 +78,7 @@
 					//SI LA PERSONA PRESIONA EL BOTÓN "INICIAR SESIÓN"
 					$("#btn_entrar").click(function(){
 						//SE EJECUTA LA FUNCIÓN enviar_datos()
-						enviar_datos($("#txt_usuario"),$("#txt_password"));
+						enviar_datos($("#txt_usuario").val(),$("#txt_password").val());
 					});
 
 					//SI LA PERSONA PRESIONA "ENTER" MIENTRAS EL FOCUS ESTÁ EN EL CAMPO
@@ -87,7 +87,7 @@
 						//SE EVALÚA SI LA TECLA PRESIONADA ES "ENTER"
 						if(event.which == 13){
 							//SE EJECUTA LA FUNCIÓN enviar_datos()
-							enviar_datos($("#txt_usuario"),$("#txt_password"));
+							enviar_datos($("#txt_usuario").val(),$("#txt_password").val());
 						}
 					});
 					//SI LA PERSONA PRESIONA "ENTER" MIENTRAS EL FOCUS ESTÁ EN EL CAMPO
@@ -96,7 +96,7 @@
 						//SE EVALÚA SI LA TECLA PRESIONADA ES "ENTER"
 						if(event.which == 13){
 							//SE EJECUTA LA FUNCIÓN enviar_datos()
-							enviar_datos($("#txt_usuario"),$("#txt_password"));
+							enviar_datos($("#txt_usuario").val(),$("#txt_password").val());
 						}
 					});
 				});
